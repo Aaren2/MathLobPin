@@ -15,7 +15,7 @@ namespace MyMath
             {
                 sum += doubles[i];
             }
-            return sum;
+            return Math.Round(sum, 2);
         }
 
 
@@ -29,7 +29,7 @@ namespace MyMath
                     max = doubles[i];
                 }
             }
-            return max;
+            return Math.Round(max, 2);
         }
         public static double MyMin(double[] doubles)
         {
@@ -41,7 +41,7 @@ namespace MyMath
                     min = doubles[i];
                 }
             }
-            return min;
+            return Math.Round(min,2);
         }
 
         public static double MyAvg(double[] doubles)
@@ -51,7 +51,7 @@ namespace MyMath
             {
                 avg += doubles[i];
             }
-            return avg/ doubles.Length;
+            return Math.Round(avg / doubles.Length,2);
         }
 
 

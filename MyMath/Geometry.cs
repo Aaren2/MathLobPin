@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace MyMath
 {
-    internal class Geometry
+    public class Geometry
     {
-        public static double STriangle(double side, double high)
+        public static double STriangle(double side, double height)
         {
-            return (side * high) / 2;
+            return Math.Round((side * height) / 2, 2);
         }
 
         public static double SSquare(double side)
         {
-            return side * side ;
+            return Math.Round(side * side, 2) ;
         }
         public static double SRectangle(double side1, double side2)
         {
-            return side1 * side2;
+            return Math.Round(side1 * side2, 2);
         }
 
         public static double SRhombus(double diagonal1, double diagonal2)
         {
-            return (diagonal1 * diagonal2) / 2;
+            return Math.Round((diagonal1 * diagonal2) / 2, 2);
         }
         public static double SCircle(double radius) 
         {
-            return radius * 2 * 3.14;
+            return Math.Round(radius * 2 * 3.14, 2);
         }
     }
 
